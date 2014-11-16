@@ -1,0 +1,135 @@
+@CHARSET "ISO-8859-1";
+
+a:link				{color:white}
+a:visited			{color:white}
+a:hover				{font-weight:bold}
+a:active			{font-style:italic}
+
+body
+	{background-image: url(Images/fondo-teca2.jpg);
+	background-attachment: float; background-position: -17px 139px;
+	width: 95%;}
+	
+#cabecera 			
+	{color: white; background-color: rgb(150,95,0);
+	background-attachment: fixed; position: absolute; top: 0px; 
+	left: 0px; right: 0px; height: 140px;}
+#cabecera p.titulo 	
+	{position: relative; top: -170px; left: 400px; font-family: Segoe Print;
+	font-size: 30pt; width: 800px;}
+#cabecera p.login 		
+	{position: absolute; top: 40px; left: 1130px; font-family: Segoe Print; z-index: 5;}
+#cabecera img.platos2		
+	{position: relative; left: 0px; right: 0px; width: 130px; height: 140px;}
+#cabecera img.platos		
+	{position: relative; left: -3px; height: 140px;}
+
+#sidenavigation		
+	{color:white; background-color: rgb(150,95,0); position: absolute; 
+	left: 0px; top: 140px; bottom: 0px; z-index: 6; width: 130px; height: 100%; }
+#sidenavigation #contenido
+	{position: relative; top: 60px;}
+#sidenavigation select.idTipoServicio
+	{position: relative; top: -15px; margin-left: 10px;}
+#sidenavigation input.fecha
+	{position: relative; top: -15px; margin-left: 10px;}
+#sidenavigation p.bus
+	{text-align: center; border-width: thin; border-color: white; border-style: ridge;
+	margin-right: 15px; margin-left: 15px; font-family: Segoe Print;}
+#sidenavigation p.desp
+	{margin-left: 10px;}
+#sidenavigation input.boton
+	{position: relative; left: 30px;}
+
+#calendario p.titulo2	
+	{position: relative; left: 460px; font-size: x-large;
+	font-family: Segoe Print; top: 150px; width: 500px;}
+#calendario form.formulario		
+	{position: relative; left: 885px; top: 170px; right: 0px; width: 250px;}
+#calendario table.calendario	
+	{position: relative; margin: 190px 100px 1em auto; border-style: none; 
+	border-collapse: collapse;}
+#calendario table.calendario td 
+	{width: 130px; height: 120px; vertical-align: top; text-align: left; empty-cells: hide;
+	border-style: groove; border-color: black; border-width: thin;}
+#calendario table.calendario th
+	{border-style: groove; border-color: black; border-width: thin;}
+#calendario p.titulo22
+	{position: relative; left: 460px; font-size: x-large;
+	font-family: Segoe Print; top: 150px; width: 500px;}
+#calendario form.formulario2		
+	{position: relative; left: 880px; top: 130px; right: 0px; width: 250px;}
+#calendario table.calendario2	
+	{position: relative; top: 140px; left: 160px; margin-bottom: 490px; border-style: none; 
+	border-collapse: collapse;}
+#calendario table.calendario2 td 
+	{width: 130px; height: 120px; vertical-align: top; text-align: left; empty-cells: hide;
+	border-style: groove; border-color: black; border-width: thin;}
+#calendario table.calendario2 th
+	{border-style: groove; border-color: black; border-width: thin;}
+#calendario img.izquierda
+	{position: relative; top: 170px; left:160px; width: 130px; height: 20px; z-index:5;}
+#calendario img.derecha
+	{position: relative; top: 170px; left: 828px; width: 130px; height: 20px; z-index:5;} 
+
+#dispServ
+	{width:79%; display:inherit;}
+#dispServ h1.dispServTitulo
+	{position: relative; left: 200px; top: 280px;}
+#dispServ h2.servicio
+	{position: relative; top: 280px; left:270px; width: 400px; color: rgb(150,95,0);
+	text-decoration: underline;}
+#dispServ h3.enlace
+	{position: relative; top: 230px; left: 600px; width: 300px; z-index: 5;}
+#dispServ p.texto
+	{position: relative; top: 270px; left:300px;}
+#dispServ p.texto2
+	{position: relative; top: 220px; left:300px; width: 350px;}
+#dispServ p.texto3
+	{position: relative; top: 200px; left:350px; width: 350px;}
+#dispServ h3.enlace2
+	{position: relative; top: 252px; left: 650px; width: 350px; z-index: 5;}
+#dispServ p.url
+	{position: relative; top: 220px; left:300px; width: 400px;}
+#dispServ img.cal
+	{width: 30px; height: 30px; z-index: 5;}
+#dispServ a
+	{color: black;}
+	
+#perfil_publico p.perfil
+	{position: relative; left: 550px; font-size: x-large;
+	font-family: Segoe Print; top: 300px; width: 500px; text-decoration: underline;}
+#perfil_publico p.saludo
+	{position: relative; left: 200px; font-size: x-large;
+	font-family: Segoe Print; top: 320px; width: 500px;}
+#perfil_publico img.imagen
+	{position: relative; left: 850px; top: 230px; width: 200px; height: 200px}
+#perfil_publico p.reservas
+	{position: relative; left: 250px; top: 100px; width: 500px;}
+#perfil_publico span.cuidado
+	{color: red; position: relative; left: 500px; top: 50px;}
+#perfil_publico p.reserva
+	{position: relative; left: 250px; top: 100px; width: 500px;}
+#perfil_publico p.inicio
+	{position: relative; left: 300px; top: 130px; width: 500px;}
+#perfil_publico img.inicio
+	{position: relative; left: 600px; top: 85px; width: 50px; height: 50px}
+
+#errordispServ h1.error
+	{text-align: center; position: relative; top: 280px;}
+#errordispServ p.mensaje
+	{text-align: center; position: relative; top: 300px;}
+#errordispServ a
+	{color: rgb(150,95,0);}
+	
+#errorReserva h1.error
+	{text-align: center; position: relative; top: 280px;}
+#errorReserva p.mensaje
+	{text-align: center; position: relative; top: 300px;}
+#errorReserva a
+	{color: rgb(150,95,0);}
+	
+#ReservaOK p.mensaje
+	{text-align: center; position: relative; top: 300px;}
+#ReservaOK a
+	{color: rgb(150,95,0);}

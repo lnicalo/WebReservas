@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>WebReservas</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+    <description></description>
+    <display-name>WebRes</display-name>
+    <servlet-name>WebRes</servlet-name>
+    <servlet-class>servlet.WebRes</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>WebRes</servlet-name>
+    <url-pattern>/WebRes</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>DispServ</display-name>
+    <servlet-name>DispServ</servlet-name>
+    <servlet-class>servlet.DispServ</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DispServ</servlet-name>
+    <url-pattern>/DispServ</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>Ocupacion</display-name>
+    <servlet-name>Ocupacion</servlet-name>
+    <servlet-class>servlet.Ocupacion</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Ocupacion</servlet-name>
+    <url-pattern>/Ocupacion</url-pattern>
+  </servlet-mapping>
+ 
+  <servlet>
+    <description></description>
+    <display-name>Perfil</display-name>
+    <servlet-name>Perfil</servlet-name>
+    <servlet-class>servlet.Perfil</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Perfil</servlet-name>
+    <url-pattern>/Perfil</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>Reserva</display-name>
+    <servlet-name>Reserva</servlet-name>
+    <servlet-class>servlet.Reserva</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Reserva</servlet-name>
+    <url-pattern>/Reserva</url-pattern>
+  </servlet-mapping>
+  
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>Mis datos</web-resource-name>
+      <url-pattern>/*</url-pattern>
+      <http-method>GET</http-method>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>gestor</role-name>
+      <role-name>publico</role-name>
+    </auth-constraint>
+  </security-constraint>
+  <security-role>
+    <role-name>gestor</role-name>
+  </security-role>
+  <security-role>
+    <role-name>publico</role-name>
+  </security-role>
+  <login-config>
+    <auth-method>BASIC</auth-method>
+    <realm-name>Bienvenido a WebRes</realm-name>
+  </login-config>
+   
+   <env-entry>
+  	<env-entry-name>BaseDatos</env-entry-name>
+  	<env-entry-type>java.lang.String</env-entry-type>
+  	<env-entry-value>D:/Areo/Teleco/5º/Daoi/Servicios.mdb</env-entry-value>  	
+   </env-entry>
+   
+</web-app>
